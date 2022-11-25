@@ -3,50 +3,43 @@
 <%@page import="com.Accio.SearchResult"%>
 
 <html>
-
 <head>
     <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
 <body>
-    <div class = "searchEngine">
-        <div class = "historyButton">
-                <form action = "History">
-                    <button type = "submit">History </button>
-                </form>
-        </div>
 
-        <div class= "logo">
-             <h1>Search Engine</h1>
-        </div>
+    <h1>Search Engine</h1>
 
-        <div class = "searchFormResult">
-            <form action = "Search">
-                <input type = "text" name = "keyword">
-                <button type = "submit"> Search </button>
-            </form>
-        </div>
-    </div>
+    <form action = "Search">
+        <input type = "text" name = "keyword">
+        <button type = "Submit"> Search </button>
+    </form>
 
-    <div class = "resultTable">
-        <table border = 2>
-            <tr>
-                <td>Name</td>
-                <td>Link</td>
-            </tr>
-            <%
-                ArrayList<SearchResult> results = (ArrayList<SearchResult>)request.getAttribute("results");
-                for(SearchResult result: results){
-            %>
-                    <tr>
-                        <td><%out.println(result.getTitle());%></td>
-                        <td><a href = "<%out.println(result.getLink());%>"><%out.println(result.getLink());%></a></td>
-                    </tr>
-            <%
-                }
-            %>
-        </table>
-    </div>
+    <form action = "History">
+        <button type = "submit">History </button>
+    </form>
+
+    <table border = 2>
+        <tr>
+            <td>Name</td>
+            <td>Link</td>
+        </tr>
+
+         <%
+            ArrayList<SearchResult> results = (ArrayList<SearchResult>)request.getAttribute("results");
+             for(SearchResult result: results){
+         %>
+
+        <tr>
+            <td><%out.println(result.getTitle());%></td>
+            <td><a href = "<%out.println(result.getLink());%>">
+            <%out.println(result.getLink());%></a></td>
+        </tr>
+
+        <%
+            }
+        %>
+    </table>
 </body>
-
 </html>

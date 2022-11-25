@@ -21,6 +21,8 @@ public class History extends HttpServlet {
         try{
             Connection connection = DatabaseConnection.getConnection();
             ResultSet resultSet = connection.createStatement().executeQuery("select * from history;");
+
+
             while (resultSet.next()){
                 HistoryResult historyResult = new HistoryResult();
                 historyResult.setName(resultSet.getString("name"));
@@ -32,9 +34,9 @@ public class History extends HttpServlet {
         }
         Collections.reverse(results);
         request.setAttribute("results", results);
-        request.getRequestDispatcher("/history.jsp").forward(request, response);
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        out.println("<h3>Hello World!</h3>");
+        request.getRequestDispatcher("history.jsp").forward(request, response);
+     //   response.setContentType("text/html");
+     //   PrintWriter out = response.getWriter();
+
     }
 }
