@@ -7,6 +7,10 @@ public class SearchResult {
     public void setTitle(String name) {
         this.name = name;
     }
+    public void setLink(String link) {
+        this.link = link;
+    }
+
 
     public String getTitle() {
         return name;
@@ -14,10 +18,6 @@ public class SearchResult {
 
     public String getLink() {
         return link;
-    }
-
-    public void setLink(String link) {
-        this.link = link;
     }
 }
 

@@ -35,7 +35,7 @@ public class Search extends HttpServlet {
             }
             PreparedStatement preparedStatement = connection.prepareStatement("Insert into history values (?, ?)");
             preparedStatement.setString(1, keyword);
-            preparedStatement.setString(2, "-------------------"+keyword);
+            preparedStatement.setString(2,  "https://poovili-search-engine.herokuapp.com/Search?keyword"+keyword);
             preparedStatement.executeUpdate();
         }
 

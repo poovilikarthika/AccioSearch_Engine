@@ -1,11 +1,11 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
-<%@page import="org.com.Priyansh.SearchResult"%>
+<%@page import="com.Accio.SearchResult"%>
 
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                 for(SearchResult result: results){
             %>
                     <tr>
-                        <td><%out.println(result.getName());%></td>
+                        <td><%out.println(result.getTitle());%></td>
                         <td><a href = "<%out.println(result.getLink());%>"><%out.println(result.getLink());%></a></td>
                     </tr>
             <%

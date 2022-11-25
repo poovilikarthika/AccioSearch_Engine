@@ -1,16 +1,16 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
-<%@page import="org.com.Priyansh.HistoryResult"%>
+<%@page import="com.Accio.HistoryResult"%>
 
 <html>
 
  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
 <body>
     <div class = "homeButton">
-        <form action = "https://priyanshsearchengine.herokuapp.com/">
+        <form action = "https://poovili-search-engine.herokuapp.com/">
         <button type = "submit">Back to home page </button>
         </form>
     </div>
