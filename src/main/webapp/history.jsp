@@ -8,17 +8,16 @@
 </head>
 
 <body>
-     <div class= "logo">
-         <h1>My Search Engine</h1>
-     </div>
-
-     <div class = "homeButton">
+    <div class = "homeButton">
         <form action = "https://poovili-search-engine.herokuapp.com/">
-            <button type = "submit">Back to home page </button>
+        <button type = "submit">Back to home page </button>
         </form>
-     </div>
+    </div>
+    <div class= "logo">
+         <h1>My Search Engine</h1>
+    </div>
 
-     <div class = "resultTable">
+    <div class = "resultTable">
         <table border = 2>
             <tr>
                 <td>Name</td>
@@ -37,6 +36,7 @@
                 }
             %>
         </table>
-     </div>
+    </div>
+
 </body>
 </html>

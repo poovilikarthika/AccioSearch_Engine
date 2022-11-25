@@ -29,7 +29,7 @@ public class Search extends HttpServlet {
 
             while (resultSet.next()){
                 SearchResult searchResult = new SearchResult();
-                searchResult.setTitle(resultSet.getString("pagetitle"));
+                searchResult.setName(resultSet.getString("pagetitle"));
                 searchResult.setLink(resultSet.getString("pagelink"));
                 results.add(searchResult);
             }

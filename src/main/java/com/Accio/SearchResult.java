@@ -4,7 +4,7 @@ public class SearchResult {
     String name;
     String link;
 
-    public void setTitle(String name) {
+    public void setName(String name) {
         this.name = name;
     }
     public void setLink(String link) {
@@ -12,7 +12,7 @@ public class SearchResult {
     }
 
 
-    public String getTitle() {
+    public String getName() {
         return name;
     }
 

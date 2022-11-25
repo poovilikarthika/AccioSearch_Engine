@@ -2,29 +2,23 @@
  <head>
      <link rel="stylesheet" type="text/css" href="Style.css">
  </head>
+<body>
+        <div class = "searchEngine">
+            <div class = "historyButton">
+                    <form action = "History">
+                        <button type = "submit">History</button>
+                    </form>
+            </div>
+            <div class= "logo">
+                 <h1>My Search Engine</h1>
+            </div>
 
- <body>
-
-    <div class= "logo">
-        <h1>My Search Engine</h1>
-    </div>
-
-    <div class = "historyButton">
-        <form action = "History">
-            <button type = "submit">History</button>
-        </form>
-    </div>
-
-
-
-     <div class = "searchEngine">
-        <div class = "searchFormHome">
-            <form action = "Search">
-                <input type = "text" name = "keyword">
-                <button type = "Submit"> Search </button>
-            </form>
+            <div class = "searchFormHome">
+                <form action = "Search">
+                    <input type = "text" name = "keyword">
+                    <button type = "submit"> Search </button>
+                </form>
+            </div>
         </div>
-
-     </div>
- </body>
+    </body>
 </html>

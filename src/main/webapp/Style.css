@@ -27,8 +27,8 @@ button{
 }
 
 .historyButton{
-    float: right;
+    float: center;
 }
 .homeButton{
-    float:right;
+    float:center;
 }
