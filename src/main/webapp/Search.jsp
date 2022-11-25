@@ -8,18 +8,27 @@
 </head>
 
 <body>
+    <div class = "searchEngine">
 
-    <h1>Search Engine</h1>
+    <div class= "logo">
+        <h1>My Search Engine</h1>
+    </div>
 
-    <form action = "Search">
-        <input type = "text" name = "keyword">
-        <button type = "Submit"> Search </button>
-    </form>
+    <div class = "searchFormResult">
+         <form action = "Search">
+            <input type = "text" name = "keyword">
+            <button type = "Submit"> Search </button>
+         </form>
+    </div>
 
-    <form action = "History">
-        <button type = "submit">History </button>
-    </form>
+    <div class = "historyButton">
+        <form action = "History">
+            <button type = "submit">History </button>
+        </form>
+    </div>
+    </div>
 
+   <div class = "resultTable">
     <table border = 2>
         <tr>
             <td>Name</td>
@@ -41,5 +50,6 @@
             }
         %>
     </table>
+    </div>
 </body>
 </html>

@@ -3,11 +3,22 @@
 <%@page import="com.Accio.HistoryResult"%>
 
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
 <body>
+     <div class= "logo">
+         <h1>My Search Engine</h1>
+     </div>
+
+     <div class = "homeButton">
         <form action = "https://poovili-search-engine.herokuapp.com/">
             <button type = "submit">Back to home page </button>
         </form>
+     </div>
 
+     <div class = "resultTable">
         <table border = 2>
             <tr>
                 <td>Name</td>
@@ -26,5 +37,6 @@
                 }
             %>
         </table>
+     </div>
 </body>
 </html>
