@@ -35,8 +35,6 @@ public class History extends HttpServlet {
         Collections.reverse(results);
         request.setAttribute("results", results);
         request.getRequestDispatcher("history.jsp").forward(request, response);
-     //   response.setContentType("text/html");
-     //   PrintWriter out = response.getWriter();
 
     }
 }

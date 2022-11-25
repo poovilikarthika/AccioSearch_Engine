@@ -13,14 +13,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+
 @WebServlet("/Search")
 public class Search extends HttpServlet {
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response){
 
         String keyword = request.getParameter("keyword");
 
-        ArrayList<SearchResult> results = new ArrayList<SearchResult>();
+        ArrayList<SearchResult> results = new ArrayList<>();
 
         try{
             Connection connection = DatabaseConnection.getConnection();
@@ -36,17 +37,23 @@ public class Search extends HttpServlet {
             preparedStatement.setString(1, keyword);
             preparedStatement.setString(2,  "https://poovili-search-engine.herokuapp.com/Search?keyword"+keyword);
             preparedStatement.executeUpdate();
+
+            request.setAttribute("results", results);
+            request.getRequestDispatcher("/Search.jsp").forward(request, response);
+            response.setContentType("text/html");
+            PrintWriter out = response.getWriter();
         }
 
         catch (SQLException sqlException){
-            System.out.println(sqlException);
+            sqlException.printStackTrace();
         }
 
-
-        request.setAttribute("results", results);
-        request.getRequestDispatcher("/Search.jsp").forward(request, response);
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
+        catch (ServletException servletException){
+            servletException.printStackTrace();
+        }
+        catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
 
     }
 }
