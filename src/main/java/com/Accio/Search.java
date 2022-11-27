@@ -22,7 +22,7 @@ public class Search extends HttpServlet {
         ArrayList<SearchResult> results = new ArrayList<SearchResult>();
         try {
             Connection connection = DatabaseConnection.getConnection();
-            ResultSet resultSet = connection.createStatement().executeQuery("select pagetitle, pagelink, (length(lower(pagedata))-length(replace(lower(pagedata), '" + keyword + "', '')))/length('" + keyword + "') as countoccurence from pages order by countoccurence desc limit 30;");
+            ResultSet resultSet = connection.createStatement().executeQuery("Select pagetitle, pagelink, (length(lower(pagedata))-length(replace(lower(pagedata), '" + keyword + "', '')))/length('" + keyword + "') as countoccurence from pages order by countoccurence desc limit 30;");
             while (resultSet.next()) {
                 SearchResult searchResult = new SearchResult();
                 searchResult.setName(resultSet.getString("pagetitle"));
@@ -36,8 +36,6 @@ public class Search extends HttpServlet {
         } catch (SQLException sqlException) {
             System.out.println(sqlException);
         }
-
-
         request.setAttribute("results", results);
         request.getRequestDispatcher("/Search.jsp").forward(request, response);
         response.setContentType("text/html");

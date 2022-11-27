@@ -32,7 +32,7 @@
                 <td>Link</td>
             </tr>
             <%
-                ArrayList<SearchResult> results = (ArrayList<SearchResult>)request.getAttribute("results");
+                ArrayList<SearchResult> results = new (ArrayList<SearchResult>)request.getAttribute("results");
                 for(SearchResult result: results){
             %>
                     <tr>
