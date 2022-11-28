@@ -29,7 +29,7 @@ public class Search extends HttpServlet {
                 searchResult.setLink(resultSet.getString("pagelink"));
                 results.add(searchResult);
             }
-            PreparedStatement preparedStatement = connection.prepareStatement("Insert into History values (?, ?)");
+            PreparedStatement preparedStatement = connection.prepareStatement("Insert into history values (?, ?)");
             preparedStatement.setString(1, keyword);
             preparedStatement.setString(2, "https://poovili-search-engine.herokuapp.com/Search?keyword=" + keyword);
             preparedStatement.executeUpdate();
