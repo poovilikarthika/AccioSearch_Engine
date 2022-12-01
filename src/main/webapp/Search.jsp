@@ -7,7 +7,23 @@
     <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
+
 <body>
+  <body>
+      <nav>
+            <ul class="r_nav">
+            <li><a href="https://mail.google.com/mail/" target="_blank">Gmail</a></li>
+            <li><a href="https://images.google.com/" target="_blank">Images</a></li>
+            <li> <a href="https://meet.google.com/" target="_blank">Meet</a> </li>
+            <li> <a href="https://www.youtube.com/" target="_blank">Youtube</a> </li>
+            <li> <a href="https://www.google.com/maps/" target="_blank">Map</a> </li>
+            <li> <a href="https://translate.google.co.in/" target="_blank">Translate</a> </li>
+            <li> <a href="https://www.google.com/calendar" target="_blank">Calendar</a> </li>
+           </ul>
+          </nav>
+
+   </body>
+
     <div class = "searchEngine">
         <div class = "historyButton">
                 <form action = "History">

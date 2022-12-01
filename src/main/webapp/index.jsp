@@ -2,6 +2,7 @@
  <head>
      <link rel="stylesheet" type="text/css" href="Style.css">
  </head>
+<body>
   <body>
       <nav>
             <ul class="r_nav">
@@ -16,7 +17,7 @@
           </nav>
 
    </body>
-<body>
+
         <div class = "searchEngine">
             <div class = "historyButton">
                     <form action = "History">
