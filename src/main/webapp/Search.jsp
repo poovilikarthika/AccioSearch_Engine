@@ -13,13 +13,6 @@
                 <form action = "History">
                     <button type = "submit">History </button>
                 </form>
-        <a href="https://www.google.com/">Google</a>
-        <a href="https://mail.google.com/mail/">Gmail</a>
-        <a href="https://www.youtube.com/">Youtube</a>
-        <a href="https://meet.google.com/">Meet</a>
-        <a href="https://www.google.com/maps/">Map</a>
-        <a href="https://translate.google.co.in/">Translate</a>
-        <a href="https://www.google.com/calendar">Calendar</a>
 
         </div>
         <div class= "logo">

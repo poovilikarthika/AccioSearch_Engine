@@ -3,14 +3,21 @@
      <link rel="stylesheet" type="text/css" href="Style.css">
  </head>
   <body>
-     <ul>
-       <li> <a href="https://www.google.com/">Google</a> </li>
-       <li> <a href="https://meet.google.com/">Meet</a> </li>
-       <li> <a href="https://www.youtube.com/">Youtube</a> </li>
-       <li> <a href="https://www.google.com/maps/">Map</a> </li>
-       <li> <a href="https://translate.google.co.in/">Translate</a> </li>
-       <li> <a href="https://www.google.com/calendar">Calendar</a> </li>
-     </ul>
+      <nav>
+            <ul class="r_nav">
+            <li><a href="https://mail.google.com/mail/" target="_blank">Gmail</a></li>
+            <li><a href="https://images.google.com/" target="_blank">Images</a></li>
+            <li> <a href="https://meet.google.com/" target="_blank">Meet</a> </li>
+            <li> <a href="https://www.youtube.com/" target="_blank">Youtube</a> </li>
+            <li> <a href="https://www.google.com/maps/" target="_blank">Map</a> </li>
+            <li> <a href="https://translate.google.co.in/" target="_blank">Translate</a> </li>
+            <li> <a href="https://www.google.com/calendar" target="_blank">Calendar</a> </li>
+
+            <li><a href="#"><img class="apps" src="https://thumb.ibb.co/gykLCw/grid_menu.png"</a></li>
+            <li class="sign_in"><a href="#">Sign in</a></li>
+           </ul>
+          </nav>
+
    </body>
 <body>
         <div class = "searchEngine">
