@@ -23,6 +23,14 @@ public class Search extends HttpServlet {
         try {
             Connection connection = DatabaseConnection.getConnection();
             ResultSet resultSet = connection.createStatement().executeQuery("Select pagetitle, pagelink, (length(lower(pagedata))-length(replace(lower(pagedata), '" + keyword + "', '')))/length('" + keyword + "') as countoccurence from pages order by countoccurence desc limit 30;");
+            /*
+             "Select pagetitle, pagelink,
+             (length(lower(pagedata))-length(replace(lower(pagedata),
+              '" + keyword + "', '')))/length('" + keyword + "')
+            as countoccurence from pages
+            order by countoccurence desc limit 30;");
+
+            */
             while (resultSet.next()) {
                 SearchResult searchResult = new SearchResult();
                 searchResult.setName(resultSet.getString("pagetitle"));

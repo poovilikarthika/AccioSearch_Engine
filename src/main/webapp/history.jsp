@@ -14,7 +14,13 @@
         </form>
     </div>
     <div class= "logo">
-         <h1>My Search Engine</h1>
+          <h1>
+                      <span style="color:#FF0000">A</span>
+                      <span style="color:#66CC66">S</span>
+                      <span style="color:#FF9966">K</span>
+                      <span style="color:#FFCCCC">M</span>
+                      <span style="color:#FF0066">E</span>
+          </h1>
     </div>
 
     <div class = "resultTable">
