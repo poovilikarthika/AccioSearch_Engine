@@ -12,9 +12,6 @@
             <li> <a href="https://www.google.com/maps/" target="_blank">Map</a> </li>
             <li> <a href="https://translate.google.co.in/" target="_blank">Translate</a> </li>
             <li> <a href="https://www.google.com/calendar" target="_blank">Calendar</a> </li>
-
-            <li><a href="#"><img class="apps" src="https://thumb.ibb.co/gykLCw/grid_menu.png"</a></li>
-            <li class="sign_in"><a href="#">Sign in</a></li>
            </ul>
           </nav>
 
